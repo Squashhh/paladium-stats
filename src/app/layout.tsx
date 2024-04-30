@@ -2,6 +2,10 @@ import type { Metadata, Viewport } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
+import ReactGA from 'react-ga';
+const TRACKING_ID = "G-Y39NSX5FN4";
+ReactGA.initialize(TRACKING_ID);
+
 export const metadata: Metadata = {
   icons: "../../public/favicon.ico",
   title: "Paladium Stats",
@@ -19,6 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <>
+
       <html lang="en" suppressHydrationWarning>
         <head />
         <body>
