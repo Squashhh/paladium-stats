@@ -1,10 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  icons: "../../public/favicon.ico",
   title: "Paladium Stats",
-  description: "Votre nouvel outil pour une meilleure expérience de jeux.",
+  description: "Votre nouvel outil pour une meilleure expérience de jeux."
 };
 
 export const viewport: Viewport = {
