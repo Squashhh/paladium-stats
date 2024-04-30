@@ -7,8 +7,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-
 
 export default function Home() {
   return (
@@ -20,7 +18,7 @@ export default function Home() {
           <CardDescription className="text-yellow-500">⚠️Le site est encore en version Bêta, il n'est donc pas encore optimisé et ne convient pas à certaines tailles d'écran.</CardDescription>
         </CardHeader>
         <CardContent>
-        <a href="https://paladium-stats.vercel.app/jobs"><Button variant="secondary">Vos niveaux de métiers</Button></a>
+          <a href="https://paladium-stats.vercel.app/jobs"><Button variant="secondary">Vos niveaux de métiers</Button></a>
         </CardContent>
         <CardFooter>
           <div className="w-full">
@@ -32,6 +30,5 @@ export default function Home() {
         </CardFooter>
       </Card>
     </main>
-
   );
 }
