@@ -59,7 +59,7 @@ export default function UsernameInput({ update }: { update: (data: { username: s
 function UsernameField({ handleChange, value }: { handleChange: React.ChangeEventHandler<HTMLInputElement>, value: string }) {
     return (
         <Input
-            type="email"
+            type="text"
             placeholder="Enter your Minecraft account username..."
             value={value}
             className='mr-2'
